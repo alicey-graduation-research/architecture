@@ -1,0 +1,238 @@
+<mxfile host="65bd71144e">
+    <diagram id="MD9tHAX4WqvGQPrQZUn4" name="01">
+        <mxGraphModel dx="1832" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="21" value="IoT Hub" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="560" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;dashed=1;strokeColor=#00FFFF;" edge="1" parent="1" source="24" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="IoT Node&lt;br&gt;(センサ等)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="750" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;strokeColor=#009900;" edge="1" parent="1" source="25" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="連携先サーバ&lt;br&gt;(PublicCloud等)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="350" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=#FF0080;startArrow=classic;startFill=1;" edge="1" parent="1" source="26" target="31">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="490" y="735"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="Kubernetes Master" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="530" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeColor=#6666FF;startArrow=classic;startFill=1;" edge="1" parent="1" source="27" target="33">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="325" y="640"/>
+                            <mxPoint x="30" y="640"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="IP広報&lt;br&gt;Pod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="500" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Node管理Pod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="500" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Cloud連携Pod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="500" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Node管理Pod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="500" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Kubernetes Node" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="720" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;dashed=1;strokeColor=#00FFFF;" edge="1" parent="1" source="33" target="31">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;span&gt;Init Program&lt;/span&gt;&lt;br&gt;&lt;span&gt;(IP広報からData受け取り、Kubeadmの設定)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-50" y="700" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#FF8000;" edge="1" parent="1" source="34" target="28">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="370" y="705"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="IoT 制御&lt;br&gt;Pod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="690" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#FF0080;startArrow=none;startFill=0;endArrow=none;endFill=0;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="600" as="sourcePoint"/>
+                        <mxPoint x="720" y="600" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="710" y="600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#FF8000;endArrow=none;endFill=0;startArrow=none;startFill=0;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="640" as="sourcePoint"/>
+                        <mxPoint x="720" y="640" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="670" y="640"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;startArrow=none;startFill=0;strokeColor=#009900;endArrow=none;endFill=0;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="559.5" as="sourcePoint"/>
+                        <mxPoint x="720" y="560" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="680" y="560"/>
+                            <mxPoint x="720" y="560"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#6666FF;endArrow=none;endFill=0;startArrow=none;startFill=0;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="720" y="680" as="sourcePoint"/>
+                        <mxPoint x="640" y="680" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="715" y="680"/>
+                            <mxPoint x="420" y="680"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="Cloud間通信(https)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="544" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Kubernetes 管理通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="585" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Kubernetes Service通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="625" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="ブロードキャストを用いた接続先広報通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="664" width="230" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="02" id="QZHIB--y58XynC5243pY">
+        <mxGraphModel dx="1832" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-0"/>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-1" parent="S4ly2EaeI5WpK3ynmkgh-0"/>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-2" value="IoT Hub" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="290" y="560" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-3" style="edgeStyle=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;dashed=1;strokeColor=#00FFFF;" edge="1" parent="S4ly2EaeI5WpK3ynmkgh-1" source="S4ly2EaeI5WpK3ynmkgh-4" target="S4ly2EaeI5WpK3ynmkgh-16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-4" value="IoT 機器&lt;br&gt;(センサ等)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="170" y="750" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-5" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;strokeColor=#009900;" edge="1" parent="S4ly2EaeI5WpK3ynmkgh-1" source="S4ly2EaeI5WpK3ynmkgh-6" target="S4ly2EaeI5WpK3ynmkgh-12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-6" value="連携先サーバ&lt;br&gt;(PublicCloud等)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="370" y="350" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-8" value="Kubernetes Master" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="290" y="530" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-9" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeColor=#6666FF;startArrow=classic;startFill=1;" edge="1" parent="S4ly2EaeI5WpK3ynmkgh-1" source="S4ly2EaeI5WpK3ynmkgh-10" target="S4ly2EaeI5WpK3ynmkgh-16">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="325" y="640"/>
+                            <mxPoint x="30" y="640"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-10" value="IP広報&lt;br&gt;Pod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="290" y="500" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-11" value="Node管理Pod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="360" y="500" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-12" value="Cloud連携Pod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="500" y="500" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-13" value="Node管理Pod" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="430" y="500" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-15" style="edgeStyle=none;html=1;dashed=1;strokeColor=#00FFFF;" edge="1" parent="S4ly2EaeI5WpK3ynmkgh-1" source="S4ly2EaeI5WpK3ynmkgh-16">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="736.8888888888889" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-16" value="&lt;span&gt;Init Program&lt;/span&gt;&lt;br&gt;&lt;span&gt;(IP広報から設定受け取り)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="-50" y="700" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-17" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#FF8000;" edge="1" parent="S4ly2EaeI5WpK3ynmkgh-1" source="S4ly2EaeI5WpK3ynmkgh-18" target="S4ly2EaeI5WpK3ynmkgh-11">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="370" y="735"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-18" value="IoT 制御Program" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="170" y="720" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-19" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#FF0080;startArrow=none;startFill=0;endArrow=none;endFill=0;" edge="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="600" as="sourcePoint"/>
+                        <mxPoint x="720" y="600" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="710" y="600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-20" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#FF8000;endArrow=none;endFill=0;startArrow=none;startFill=0;" edge="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="640" as="sourcePoint"/>
+                        <mxPoint x="720" y="640" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="670" y="640"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-21" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;startArrow=none;startFill=0;strokeColor=#009900;endArrow=none;endFill=0;" edge="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="559.5" as="sourcePoint"/>
+                        <mxPoint x="720" y="560" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="680" y="560"/>
+                            <mxPoint x="720" y="560"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-22" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#6666FF;endArrow=none;endFill=0;startArrow=none;startFill=0;" edge="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="720" y="680" as="sourcePoint"/>
+                        <mxPoint x="640" y="680" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="715" y="680"/>
+                            <mxPoint x="420" y="680"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-23" value="Cloud間通信(https)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="720" y="544" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-24" value="Kubernetes 管理通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="720" y="585" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-25" value="Kubernetes Service通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="720" y="625" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4ly2EaeI5WpK3ynmkgh-26" value="ブロードキャストを用いた接続先広報通信" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="S4ly2EaeI5WpK3ynmkgh-1">
+                    <mxGeometry x="720" y="664" width="230" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
